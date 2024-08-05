@@ -1,0 +1,223 @@
+/* This is the link below for the font family that I'm using  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* This is the link below for all the icons that I'm using  */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: var(--textfont);
+}
+
+/* This is the colors and font family that I'm using within the root */
+
+:root{
+  --bgDcolor1: #fffafa;
+  --bgCcolor2: #e60026;
+  --bgCcolor3: #002387;
+  --bginputcolor1: #000000;
+  --textfont: "Poppins", sans-serif;
+}
+
+/* This is the dashboard style starting */
+
+.header{
+  
+}
+
+
+/* This is the dashboard style ending */
+
+/* The styling for the voter-registration page starts here */
+
+
+.vrBody {
+  background-color: var(--bgDcolor1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.vrcontainer {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px; /* Set a max-width for large screens */
+  margin: 20px; /* Add some margin */
+}
+
+.hrline {
+  width: 2.9rem;
+  height: .3rem;
+  background: var(--bgCcolor3);
+  position: relative;
+  bottom: 1rem;
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.voter-form .form-label {
+  color: var(--bgCcolor3);
+  font-weight: 600;
+}
+
+.voter-form .form-control {
+  border: 1px solid var(--bgCcolor2);
+}
+
+.voter-form .form-control:focus {
+  border-color: var(--bgCcolor3);
+  box-shadow: 0 0 5px var(--bgCcolor3);
+}
+
+.voter-form .btn-primary {
+  background-color: var(--bgCcolor2);
+  border-color: var(--bgCcolor2);
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.voter-form .btn-primary:hover {
+  background-color: var(--bgCcolor3);
+  border-color: var(--bgCcolor3);
+}
+
+.voter-form .btn-primary:focus {
+  box-shadow: 0 0 5px var(--bgCcolor3);
+}
+
+.text-center {
+  color: var(--bginputcolor1);
+}
+
+.submit-loginc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: .5rem;
+}
+
+.login-cont p {
+  padding-top: 1.2rem;
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  .vrcontainer {
+    max-width: 600px; /* Maximum width for the form container on larger screens */
+  }
+}
+/* The styling for the voter-registration page ends here */
+/* The styling for the login page starts here */
+
+
+.logbody {
+  background-color: var(--bgDcolor1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.lcontainer {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px; /* Set a max-width for large screens */
+  margin: 20px; /* Add some margin */
+}
+
+.hrline {
+  width: 2.9rem;
+  height: .3rem;
+  background: var(--bgCcolor3);
+  position: relative;
+  bottom: 1rem;
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.login-form .form-label {
+  color: var(--bgCcolor3);
+  font-weight: 600;
+}
+
+.login-form .form-control {
+  border: 1px solid var(--bgCcolor2);
+}
+
+.login-form .form-control:focus {
+  border-color: var(--bgCcolor3);
+  box-shadow: 0 0 5px var(--bgCcolor3);
+}
+
+.login-form .btn-primary {
+  background-color: var(--bgCcolor2);
+  border-color: var(--bgCcolor2);
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.login-form .btn-primary:hover {
+  background-color: var(--bgCcolor3);
+  border-color: var(--bgCcolor3);
+}
+
+.login-form .btn-primary:focus {
+  box-shadow: 0 0 5px var(--bgCcolor3);
+}
+
+#eyeClick{
+  position: relative;
+  bottom: 1.7rem;
+  left: 33rem;
+  color: #5c636a;
+  transition: all .3s;
+}
+
+#eyeClick:hover{
+  color: #e60026;
+}
+
+.text-center {
+  color: var(--bginputcolor1);
+}
+
+.submit-loginc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: .5rem;
+}
+
+.login-cont p {
+  padding-top: 1.2rem;
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  .lcontainer {
+    max-width: 600px; /* Maximum width for the form container on larger screens */
+  }
+}
+
+
+/* The styling for the login page ends here */

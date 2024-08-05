@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=   device-width, initial-scale=1.0">
+    <title>Election Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   
+        <header class="header">
+
+            <div class="user_prof_cont" id="userProfile">
+                <% data.forEach(storeData => { %>
+                    <img src="<%= storeData.photo %>" alt="<%= storeData.username %>" id="profilePic">
+                    <h3 id="userName"><%= storeData.firstname %> <%= storeData.lastname %></h3>
+                <% }); %> 
+            </div>
+            <button id="loginOutBtn"><a href="/login" id="loginOuta">Log Out</a></button>
+        </header>
+    <div class="container">    
+        <section class="dashboard">
+            <div class="div alert">
+               <p><b>Very Enssential</b> Make sure to put your voter ID, so your vote can be counted </p>
+            </div>
+            <p id="dateTime"></p>
+
+            <div class="div">
+                <h4>Election Status Overview</h4>
+                <p><b>Election Name:</b> Presidental Election 2024</p>
+                <p><b>Election Date:</b> October 10, 2024</p>
+                <p><b>Current Round:</b> Round 1</p>
+            </div>
+
+            <div class="div">
+                <h4>Candidate Information</h4>
+                <ul class="candidate_list">
+                    <li><b></b> - Unity Party</li>
+                    <li><b></b> - CDC</li>
+                    <li><b></b> - Liberty Party</li>
+                </ul>
+            </div>
+
+            <div class="div">
+                <h4>Vote Count & Results</h4>
+                <ul class="candidate_list">
+                    <li><b>:</b>4,000,000</li>
+                    <li><b>:</b>1,000,000</li>
+                    <li><b>:</b>9,200,48</li>
+                </ul>
+            </div>
+            <!-- <div class="card">
+                <h2>Candidate 1</h2>
+                <p>Party: Example Party</p>
+                <p>Votes: <span id="votes1">0</span></p>
+            </div>
+            <div class="card">
+                <h2>Candidate 2</h2>
+                <p>Party: Another Party</p>
+                <p>Votes: <span id="votes2">0</span></p>
+            </div>
+            <div class="card">
+                <h2>Candidate 3</h2>
+                <p>Party: Yet Another Party</p>
+                <p>Votes: <span id="votes3">0</span></p>
+            </div> -->
+            <div class="vote_div">
+                <a href="/vote" id="voteNow">Vote Now</a>
+            </div>
+        </section>
+    </div>    
+        <footer>
+            <p>&copy; 2024 National Election Commission, All rights reserved</p>
+        </footer>
+        
+<script src="js/script.js"></script>
+</body>
+</html>
